@@ -1,2 +1,2 @@
 # estimator
-https://harpercham.github.io/JGP-Estimator/
+https://harpercham.github.io/jetflow_estimator/
