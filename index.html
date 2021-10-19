@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estimator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <h1><b> Jet Flow Estimator</b></h1><br>
+            <br>
+
+          
+
+        </div><br><br>
+
+        <ul>
+            <h3> Input</h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="number" class="pressure" value="" placeholder="pressure(bar)">
+                    <input type="number" class="nozDia" value="" placeholder="nozzle size(mm)">
+                    <input type="number" class="nozQty" value="" placeholder="nozzle qty(nos)">
+                    <input type="number" class="pumpOut" value="" placeholder="pump outlet dia(inch)">
+                    <input type="number" class="density" value="" placeholder="density(water = 1)">
+                </div>
+            </div><br>
+           
+        </ul>
+
+
+        <ul>
+            <h3> head loss factor <h5>(suggest value:0.1~0.3; depends on system; lower value better system)</h5></h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="number" class="factor" value="" placeholder="0 means no head loss">
+                </div>
+                
+            </div><br>
+            
+        </ul>
+
+
+        <br>
+        <h3>Output</h3>
+
+        <div class="p-3 mb-2 bg-warning text-dark">
+            <div class="row">
+                <h3 class="col-sm-6" id="flowRate" .lead>Flowrate:</h3>
+                <div class="col-sm-6">
+                    <u>
+                        <h3 id="timing" .lead>L/min</h3>
+                    </u>
+                </div>
+            </div>
+        </div>
+        <button onclick="calculate()">Calculate </button>
+    </div>
+
+     
+        
+        <script type="text/javascript" src="calculate.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcyyWSd6ETju45EKjArNtJXAJt5w1xecQ&callback=initMap"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script><br><br><br>
+       
+
+</body>
+
+</html>
